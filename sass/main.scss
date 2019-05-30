@@ -39,14 +39,11 @@ html, body{
 body{
   background: $bg-color;
   overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .logo{
   .square{
-    position: relative;
+    @include center;
     width: 49vmin;
     height: 49vmin;
     background: red;
@@ -55,14 +52,14 @@ body{
     background: linear-gradient(135deg, $logo-gradient1-color, $logo-gradient2-color);
 
     .circle-1{
-      position: absolute;
+      @include center;
       background: blue;
       width: 8vmin;
       height: 8vmin;
       background: $bg-color;
       border-radius: 50%;
-      bottom: 7.3vmin;
-      left: 14vmin;
+      top: 26.4vmin;
+      left: -13vmin;
 
       &:before{
         @include pseudo;
@@ -76,14 +73,14 @@ body{
     }    
 
     .circle-2{
-      position: absolute;
+      @include center;
       background: blue;
       width: 6vmin;
       height: 6vmin;
       background: $bg-color;
       border-radius: 50%;
-      top: 21.1vmin;
-      right: 7.6vmin;
+      top: -0.8vmin;
+      right: -27.8vmin;
 
       &:before{
         @include pseudo;
@@ -100,8 +97,8 @@ body{
   .line-1{
     @include center;
     transform: rotate(32.8deg);
-    top: -7vmin;
-    left: -14vmin;
+    top: -9vmin;
+    left: -16.3vmin;
     width: 2.1vmin;
     height: 56.5vmin;
     background: $bg-color;
@@ -130,8 +127,8 @@ body{
   .line-2{
     @include center;
     transform: rotate(67deg);
-    top: -0.5vmin;
-    left: 1vmin;
+    top: -3vmin;
+    left: -1vmin;
     width: 2.1vmin;
     height: 56.5vmin;
     background: $bg-color;
@@ -140,7 +137,7 @@ body{
       @include pseudo;
       transform: rotate(34.5deg);
       top: 5.8vmin;
-      left: 5.4vmin;
+      left: 5.5vmin;
       width: 2.1vmin;
       height: 60vmin;
       background: $bg-color; 
@@ -149,7 +146,7 @@ body{
     &:after{
       @include pseudo;
       transform: rotate(78.3deg);
-      top: 11.6vmin;
+      top: 11.8vmin;
       left: 5.4vmin;
       width: 2.1vmin;
       height: 60vmin;
